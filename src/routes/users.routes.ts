@@ -115,7 +115,7 @@ usersRouter.get('/send_email/:id', async (request, response) => {
 
         let info = await transporter.sendMail({
             from: 'testemerakiiateclube@outlook.com', // sender address
-            to: 'marlonhenrique777@gmail.com', // list of receivers
+            to: checkUserExist.email, // list of receivers
             subject: 'Teste Prático - BridgeHub', // Subject line
             text: 'Olá, email enviado como parte do teste prático da BridgeHub.', // plain text body
             html: `<h2>Somente um teste.</h3><h3 style=\"color:red\"><h3>`, // html body
