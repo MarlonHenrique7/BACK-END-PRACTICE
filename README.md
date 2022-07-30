@@ -15,7 +15,7 @@ A seguir, tem-se uma breve descrição das funcionalidades desenvolvidas neste t
 Após a conexão ser validada, execute os seguintes comandos (migrations):
 
 ```
-**Com Yarn:
+**Com Yarn:**
 
 yarn typeorm migration:run 
 
