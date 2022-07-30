@@ -21,18 +21,14 @@ yarn typeorm migration:run
 
 ```
 
-
-
-## yarn typeorm migration:run
-
 ## Rotas da Apliação
 
 O servidor está sendo executado na porta 3333.
 ```
--> /users -> Lista os usuários
--> /add_user-> Cria um usuárrio
--> /edit_user/id -> Edita o usuário
--> /users/id -> Lista um usuário
--> /delete_user/id -> Delete um usuário
--> /send_email/id -> Envia email ao usuário
+> /users -> Lista os usuários
+> /users/id -> Lista um usuário
+> /add_user-> Cria um usuárrio
+> /edit_user/id -> Edita o usuário
+> /delete_user/id -> Delete um usuário
+> /send_email/id -> Envia email ao usuário
 ```
