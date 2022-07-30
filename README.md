@@ -4,11 +4,13 @@ A seguir, tem-se uma breve descrição das funcionalidades desenvolvidas neste t
 
 ## Banco de Dados
 
+```
 > Foi utilizado o Postgres 14.1 \br
 > Porta 5432
 > username:postgres
 > password: root
 > database: bridgehub
+```
 
 Após a conexão ser validada, execute os seguintes comandos (migrations):
 
