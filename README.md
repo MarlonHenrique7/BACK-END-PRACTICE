@@ -21,7 +21,7 @@ yarn typeorm migration:run
 
 ```
 
-## Rotas da Apliação
+## Rotas da Aplicação
 
 O servidor está sendo executado na porta 3333.
 ```
