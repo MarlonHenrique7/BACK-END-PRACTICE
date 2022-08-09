@@ -30,7 +30,7 @@ usersRouter.post('/add_user', async (request, response) => {
     }
 });
 
-usersRouter.post('/edit_user/:id', async (request, response) => {
+usersRouter.put('/edit_user/:id', async (request, response) => {
     try {
         const id = request.params.id;
         const { name, email, phone } = request.body;
@@ -62,7 +62,7 @@ usersRouter.get('/users/:id', async (request, response) => {
     }
 });
 
-usersRouter.get('/delete_user/:id', async (request, response) => {
+usersRouter.delete('/delete_user/:id', async (request, response) => {
     try {
         const id = request.params.id;
 
@@ -105,8 +105,8 @@ usersRouter.get('/send_email/:id', async (request, response) => {
             port: 587,
             secureConnection: 'true',
             auth: {
-                user: 'testemerakiiateclube@outlook.com',
-                pass: 'djbnl481nd12d=k9f1239(*&@bdI',
+                user: 'youemail@test.com',
+                pass: '123123',
             },
             tls: {
                 ciphers: 'SSLv3',
@@ -114,10 +114,10 @@ usersRouter.get('/send_email/:id', async (request, response) => {
         });
 
         let info = await transporter.sendMail({
-            from: 'testemerakiiateclube@outlook.com', // sender address
+            from: 'youemail@test.com', // sender address
             to: checkUserExist.email, // list of receivers
-            subject: 'Teste Prático - BridgeHub', // Subject line
-            text: 'Olá, email enviado como parte do teste prático da BridgeHub.', // plain text body
+            subject: 'Teste Prático', // Subject line
+            text: 'Olá, email enviado como parte de um teste prático.', // plain text body
             html: `<h2>Somente um teste.</h3><h3 style=\"color:red\"><h3>`, // html body
         });
 
